@@ -1,7 +1,8 @@
 module "network" {
   source  = "app.terraform.io/projectsX/network/google"
   version = "3.4.0"
-  project = var.project
+  project_id = var.project
+  network_name = "shaun-vpc"
 
 subnets = [
   {

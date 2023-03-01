@@ -1,8 +1,7 @@
 module "network" {
   source  = "app.terraform.io/projectsX/network/google"
   version = "3.4.0"
-  # insert required variables here
-}
+  project = var.project
 
 subnets = [
   {
@@ -11,3 +10,7 @@ subnets = [
     subnet_region = var.region
   }
 ]
+
+
+}
+
